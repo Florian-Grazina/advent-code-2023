@@ -1,0 +1,14 @@
+C:\Users\Flori\source\repos\advent\03-12\bin\Debug\net8.0\03-12.exe
+C:\Users\Flori\source\repos\advent\03-12\bin\Debug\net8.0\03-12.deps.json
+C:\Users\Flori\source\repos\advent\03-12\bin\Debug\net8.0\03-12.runtimeconfig.json
+C:\Users\Flori\source\repos\advent\03-12\bin\Debug\net8.0\03-12.dll
+C:\Users\Flori\source\repos\advent\03-12\bin\Debug\net8.0\03-12.pdb
+C:\Users\Flori\source\repos\advent\03-12\obj\Debug\net8.0\03-12.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Flori\source\repos\advent\03-12\obj\Debug\net8.0\03-12.AssemblyInfoInputs.cache
+C:\Users\Flori\source\repos\advent\03-12\obj\Debug\net8.0\03-12.AssemblyInfo.cs
+C:\Users\Flori\source\repos\advent\03-12\obj\Debug\net8.0\03-12.csproj.CoreCompileInputs.cache
+C:\Users\Flori\source\repos\advent\03-12\obj\Debug\net8.0\03-12.dll
+C:\Users\Flori\source\repos\advent\03-12\obj\Debug\net8.0\refint\03-12.dll
+C:\Users\Flori\source\repos\advent\03-12\obj\Debug\net8.0\03-12.pdb
+C:\Users\Flori\source\repos\advent\03-12\obj\Debug\net8.0\03-12.genruntimeconfig.cache
+C:\Users\Flori\source\repos\advent\03-12\obj\Debug\net8.0\ref\03-12.dll
