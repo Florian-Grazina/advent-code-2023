@@ -1,15 +1,17 @@
 ﻿using _05;
+using System.Runtime.InteropServices;
 using static System.Net.Mime.MediaTypeNames;
 
 string[] input = File.ReadAllLines("../../../input.txt");
 string[] inputTrimmed = input.Where(x => !string.IsNullOrEmpty(x)).ToArray();
 
+
 List<Seed> seeds = [];
 List<long> seedsInput = inputTrimmed[0].Split(": ")[1].Split(" ").Select(long.Parse).ToList();
 
-for(int i = 0; i < seedsInput.Count; i += 2)
+for (int i = 0; i < seedsInput.Count; i += 2)
 {
-    seeds.Add(new Seed(seedsInput[i], seedsInput[i+1]));
+    seeds.Add(new Seed(seedsInput[i], seedsInput[i + 1]));
 }
 
 for (int i = 1; i < inputTrimmed.Length; i++)
@@ -22,12 +24,11 @@ for (int i = 1; i < inputTrimmed.Length; i++)
     {
         Reset();
     }
-    Console.WriteLine( i );
+    Console.WriteLine(i);
 }
 Reset();
 
-Console.WriteLine(seeds.Min(s => s.Locations[0]));
-
+File.WriteAllText(AppContext.BaseDirectory + "answer.txt", seeds.Min(s => s.Locations[0]).ToString());
 
 void ExecCommand(string destinationString, string sourceString, string rangeString)
 {
@@ -84,8 +85,9 @@ void ExecCommand(string destinationString, string sourceString, string rangeStri
 
 void Reset()
 {
-    foreach(Seed seed in seeds)
+    foreach (Seed seed in seeds)
     {
         seed.IsMapped = false;
     }
 }
+

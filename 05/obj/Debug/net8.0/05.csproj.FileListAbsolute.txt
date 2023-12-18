@@ -12,3 +12,4 @@ C:\Users\fgrazina\Source\repos\Florian-Grazina\advent-2023\05\obj\Debug\net8.0\r
 C:\Users\fgrazina\Source\repos\Florian-Grazina\advent-2023\05\obj\Debug\net8.0\05.pdb
 C:\Users\fgrazina\Source\repos\Florian-Grazina\advent-2023\05\obj\Debug\net8.0\05.genruntimeconfig.cache
 C:\Users\fgrazina\Source\repos\Florian-Grazina\advent-2023\05\obj\Debug\net8.0\ref\05.dll
+C:\Users\fgrazina\Source\repos\Florian-Grazina\advent-2023\05\obj\Debug\net8.0\05.sourcelink.json
