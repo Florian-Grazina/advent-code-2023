@@ -1,0 +1,15 @@
+C:\Users\fgrazina\Source\repos\Florian-Grazina\advent-2023\18\bin\Debug\net8.0\18.exe
+C:\Users\fgrazina\Source\repos\Florian-Grazina\advent-2023\18\bin\Debug\net8.0\18.deps.json
+C:\Users\fgrazina\Source\repos\Florian-Grazina\advent-2023\18\bin\Debug\net8.0\18.runtimeconfig.json
+C:\Users\fgrazina\Source\repos\Florian-Grazina\advent-2023\18\bin\Debug\net8.0\18.dll
+C:\Users\fgrazina\Source\repos\Florian-Grazina\advent-2023\18\bin\Debug\net8.0\18.pdb
+C:\Users\fgrazina\Source\repos\Florian-Grazina\advent-2023\18\obj\Debug\net8.0\18.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fgrazina\Source\repos\Florian-Grazina\advent-2023\18\obj\Debug\net8.0\18.AssemblyInfoInputs.cache
+C:\Users\fgrazina\Source\repos\Florian-Grazina\advent-2023\18\obj\Debug\net8.0\18.AssemblyInfo.cs
+C:\Users\fgrazina\Source\repos\Florian-Grazina\advent-2023\18\obj\Debug\net8.0\18.csproj.CoreCompileInputs.cache
+C:\Users\fgrazina\Source\repos\Florian-Grazina\advent-2023\18\obj\Debug\net8.0\18.sourcelink.json
+C:\Users\fgrazina\Source\repos\Florian-Grazina\advent-2023\18\obj\Debug\net8.0\18.dll
+C:\Users\fgrazina\Source\repos\Florian-Grazina\advent-2023\18\obj\Debug\net8.0\refint\18.dll
+C:\Users\fgrazina\Source\repos\Florian-Grazina\advent-2023\18\obj\Debug\net8.0\18.pdb
+C:\Users\fgrazina\Source\repos\Florian-Grazina\advent-2023\18\obj\Debug\net8.0\18.genruntimeconfig.cache
+C:\Users\fgrazina\Source\repos\Florian-Grazina\advent-2023\18\obj\Debug\net8.0\ref\18.dll
