@@ -58,6 +58,7 @@
                 long sum1 = tuple1.Item1 + tuple2.Item1;
                 long sum2 = tuple1.Item2 + tuple2.Item2;
 
+                Console.WriteLine();
                 return (sum1, sum2);
             }
 
@@ -78,6 +79,7 @@
             //            Console.Write(map[x, y]);
             //        }
             //        Console.WriteLine();
+
             //    }
             //}
 
