@@ -31,7 +31,9 @@
 
             //FloodFill(map, 100, 100);
             //Print();
-            Console.WriteLine(CalculatePolygonArea(coords) + commands.Sum(c => c.Steps));
+            Console.WriteLine(CalculatePolygonArea(coords) + commands.Sum(c => c.Steps) / 2 + 1);
+            Console.WriteLine(commands.Sum(c => c.Steps));
+            Console.WriteLine(CalculatePolygonArea(coords));
 
 
             static long CalculatePolygonArea(List<(long, long)> coordinates)
