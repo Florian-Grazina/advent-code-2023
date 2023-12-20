@@ -6,41 +6,39 @@
         {
             string[] input = File.ReadAllLines("../../../input-test.txt");
 
-            double unit = 256000000000000;
+            double unitTotal = 256000000000000;
             double A = 0;
             double R = 0;
             List<Command> listCommands = [];
+            List<Units> listUnits = [];
 
             foreach (string command in input)
                 listCommands.Add(new Command(command));
 
-            listCommands.First(c => c.Id == "in").Unit = unit;
+            listUnits.Add(new(unitTotal, (1, 4000), (1, 4000), (1, 4000), (1, 4000), "in"));
 
 
             // process
-            while(listCommands.Sum(c => c.Unit) > 0)
+            while(A + R != unitTotal)
             {
-                List<Command> commandsToProcess = listCommands.Where(c => c.Unit > 0).ToList();
+                List<Units> result = [];
 
-                foreach (var command in commandsToProcess)
+                foreach (Units unit in listUnits)
                 {
-                    if(command.Id == "qqz")
-                        Console.WriteLine();
+                    result.AddRange(listCommands.First(c => c.Id == unit.Command).Test());
 
-                    Dictionary<string, double> result = command.Test();
-
-                    foreach(KeyValuePair<string, double> kvp in result)
+                    foreach (Units res in result)
                     {
-                        if (kvp.Key == "A")
-                            A += kvp.Value;
+                        if (res.Command == "A")
+                            A += res.Number;
 
-                        else if (kvp.Key == "R")
-                            R += kvp.Value;
-
-                        else
-                            listCommands.First(c => c.Id == kvp.Key).Unit = kvp.Value;
+                        else if (res.Command == "R")
+                            R += res.Number;
                     }
                 }
+
+                listUnits.AddRange(result.Where(u => u.Command != "A" && u.Command != "R"));
+                listUnits.RemoveAll(u => u.Number == 0);
             }
 
             Console.WriteLine(A);

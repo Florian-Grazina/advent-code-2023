@@ -12,7 +12,7 @@ namespace _19
     {
         public string Id { get; set; }
         public string[] Workflow { get; set; }
-        public double Unit { get; set; }
+        public Units Units { get; set; }
 
 
         public Command(string input)
@@ -29,37 +29,74 @@ namespace _19
             Workflow = splittedInput[1].Replace('}',' ').Trim().Split(',');
         }
 
-        public Dictionary<string, double> Test()
+        public List<Units> Test()
         {
-            Dictionary<string, double> toReturn = [];
+            List<Units> toReturn = [];
 
             foreach (string w in Workflow)
             {
                 string[] process = w.Split(':');
-                double unitPassed = 0;
 
-                if (process[0].Contains('<'))
+                toReturn.AddRange(process[0] switch
                 {
-                    unitPassed = (int.Parse(process[0][2..]) - 1) / 4000d * Unit;
-                    AddToDico(toReturn, process[1], unitPassed);
-                }
-
-                else if (process[0].Contains('>'))
-                {
-                    unitPassed = (4000 - int.Parse(process[0][2..])) / 4000d * Unit;
-                    AddToDico(toReturn, process[1], unitPassed);
-                }
-
-                else
-                {
-                    unitPassed = Unit;
-                    AddToDico(toReturn, process[0], unitPassed);
-                }
-
-                Unit -= unitPassed;
+                    "x" => CalculateX(Units.RangeX, process),
+                    "m" => CalculateM(Units.RangeM, process),
+                    "a" => CalculateA(Units.RangeA, process),
+                    "s" => CalculateS(Units.RangeS, process),
+                });
             }
 
             return toReturn;
+        }
+
+        private List<Units> CalculateX((int,int) range, string[] process)
+        {
+            int total = range.Item2 - range.Item1 + 1;
+            List<Units> result = [];
+
+            if (process[0].Contains('<'))
+            {
+                int comparaison = int.Parse(process[0][2..]);
+                double pourcentage = (comparaison - 1) / total;
+
+                result.Add(new(
+                    pourcentage * Units.Number,
+                    (range.Item1,comparaison - 1),
+                    Units.RangeM,
+                    Units.RangeA,
+                    Units.RangeS,
+                    process[1]));
+
+                Units.Number -= pourcentage * Units.Number;
+            }
+
+            else if (process[0].Contains('>'))
+            {
+                int comparaison = int.Parse(process[0][2..]);
+                double pourcentage = (range.Item2 - comparaison) / total;
+
+                result.Add(new(
+                    pourcentage * Units.Number,
+                    (comparaison + 1, range.Item2),
+                    Units.RangeM,
+                    Units.RangeA,
+                    Units.RangeS,
+                    process[1]));
+
+                Units.Number -= pourcentage * Units.Number;
+            }
+
+            else
+            {
+                result.Add(new(
+                    pourcentage * Units.Number,
+                    (comparaison + 1, range.Item2),
+                    Units.RangeM,
+                    Units.RangeA,
+                    Units.RangeS,
+                    process[1]));
+            }
+
         }
 
         private void AddToDico(Dictionary<string, double> dico, string key, double value)

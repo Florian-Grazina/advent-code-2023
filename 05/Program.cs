@@ -7,87 +7,53 @@ string[] inputTrimmed = input.Where(x => !string.IsNullOrEmpty(x)).ToArray();
 
 
 List<Seed> seeds = [];
+List<Command> commands = [];
+Soil soilType = 0;
 List<long> seedsInput = inputTrimmed[0].Split(": ")[1].Split(" ").Select(long.Parse).ToList();
+
+foreach(string line in inputTrimmed)
+{
+    if (int.TryParse(line[0].ToString(), out _))
+    {
+        long[] values = line.Split(' ').Select(long.Parse).ToArray();
+        commands.Add(new(values[0], values[1], values[2], soilType));
+    }
+    else
+        soilType++;
+}
+
+commands.Reverse();
 
 for (int i = 0; i < seedsInput.Count; i += 2)
 {
-    seeds.Add(new Seed(seedsInput[i], seedsInput[i + 1]));
+    seeds.Add(new Seed(seedsInput[i], seedsInput[i]));
 }
 
-for (int i = 1; i < inputTrimmed.Length; i++)
+long indexSeed = 0;
+
+while(true)
 {
-    string[] splittedLine = inputTrimmed[i].Split(" ");
+    indexSeed++;
+    long tempIndex = indexSeed;
 
-    if (long.TryParse(splittedLine[0].ToString(), out _))
-        ExecCommand(splittedLine[0], splittedLine[1], splittedLine[2]);
-    else
+    for(int i = 8; i > 1; i--)
     {
-        Reset();
-    }
-    Console.WriteLine(i);
-}
-Reset();
-
-File.WriteAllText(AppContext.BaseDirectory + "answer.txt", seeds.Min(s => s.Locations[0]).ToString());
-
-void ExecCommand(string destinationString, string sourceString, string rangeString)
-{
-    long destination = long.Parse(destinationString);
-    long source = long.Parse(sourceString);
-    long delta = destination - source;
-    long range = long.Parse(rangeString);
-
-    List<Seed> seedsToAdd = [];
-
-    for (int i = 0; i < seeds.Count; i++)
-    {
-        if (seeds[i].IsMapped)
-            continue;
-
-        if (seeds[i].Locations[0] > source + range)
-            continue;
-
-        if (seeds[i].Locations[1] < source)
-            continue;
-
-        if (seeds[i].Locations[0] >= source && seeds[i].Locations[1] >= source + range)
+        List<Command> steps = commands.Where(c => c.Soil == (Soil)i).ToList();
+        foreach(Command c in steps)
         {
-            seedsToAdd.Add(new Seed(seeds[i].Locations[0] + delta, source + range + delta));
-            seeds[i].Locations[0] = source + range;
-        }
+            long move = c.Move(tempIndex);
 
-        else if (seeds[i].Locations[0] <= source && seeds[i].Locations[1] <= source + range)
-        {
-            seedsToAdd.Add(new Seed(source + delta, seeds[i].Locations[1] + delta));
-            seeds[i].Locations[1] = source;
-        }
-
-        else if (seeds[i].Locations[0] >= source && seeds[i].Locations[1] <= source + range)
-        {
-            seeds[i].Locations[0] += delta;
-            seeds[i].Locations[1] += delta;
-            seeds[i].IsMapped = true;
-        }
-
-        else if (seeds[i].Locations[0] <= source && seeds[i].Locations[1] >= source + range)
-        {
-            var seed1 = new Seed(seeds[i].Locations[0], source) { IsMapped = false };
-            seeds[i].Locations = [source, source + range];
-            seeds[i].IsMapped = true;
-            var seed3 = new Seed(seeds[i].Locations[1], source + delta) { IsMapped = false };
-
-            seedsToAdd.AddRange([seed1, seed3]);
+            if (move != 0)
+            {
+                tempIndex += move;
+                break;
+            }
         }
     }
-    seeds.AddRange(seedsToAdd);
-    seedsToAdd.Clear();
-}
 
-void Reset()
-{
-    foreach (Seed seed in seeds)
+    if (seeds.Any(s => s.isInRange(tempIndex)))
     {
-        seed.IsMapped = false;
+        Console.WriteLine(tempIndex);
+        break;
     }
 }
-
