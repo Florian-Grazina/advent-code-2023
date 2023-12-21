@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace _19
 {
-    internal class Units(double number, (int, int) rangeX, (int, int) rangeM, (int, int) rangeA, (int, int) rangeS, string command) : ICloneable
+    internal class Units(long number, (int, int) rangeX, (int, int) rangeM, (int, int) rangeA, (int, int) rangeS, string command) : ICloneable
     {
-        public double Number { get; set; } = number;
+        public long Number { get; set; } = number;
         public (int, int) RangeX { get; set; } = rangeX;
         public (int, int) RangeM { get; set; } = rangeM;
         public (int, int) RangeA { get; set; } = rangeA;
