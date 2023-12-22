@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\fgrazina\\Source\\repos\\Florian-Grazina\\advent-2023\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9CC17A1E-DA79-435A-A581-69559FA22D7F}|21\\21.csproj|c:\\users\\fgrazina\\source\\repos\\florian-grazina\\advent-2023\\21\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CC17A1E-DA79-435A-A581-69559FA22D7F}|21\\21.csproj|solutionrelative:21\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{750DFE00-71D6-4866-A24F-EB577D0E7CF3}|16\\16.csproj|c:\\users\\fgrazina\\source\\repos\\florian-grazina\\advent-2023\\16\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{750DFE00-71D6-4866-A24F-EB577D0E7CF3}|16\\16.csproj|solutionrelative:16\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CC17A1E-DA79-435A-A581-69559FA22D7F}|21\\21.csproj|c:\\users\\fgrazina\\source\\repos\\florian-grazina\\advent-2023\\21\\plot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CC17A1E-DA79-435A-A581-69559FA22D7F}|21\\21.csproj|solutionrelative:21\\plot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{750DFE00-71D6-4866-A24F-EB577D0E7CF3}|16\\16.csproj|c:\\users\\fgrazina\\source\\repos\\florian-grazina\\advent-2023\\16\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750DFE00-71D6-4866-A24F-EB577D0E7CF3}|16\\16.csproj|solutionrelative:16\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CC17A1E-DA79-435A-A581-69559FA22D7F}|21\\21.csproj|c:\\users\\fgrazina\\source\\repos\\florian-grazina\\advent-2023\\21\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{9CC17A1E-DA79-435A-A581-69559FA22D7F}|21\\21.csproj|solutionrelative:21\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{750DFE00-71D6-4866-A24F-EB577D0E7CF3}|16\\16.csproj|c:\\users\\fgrazina\\source\\repos\\florian-grazina\\advent-2023\\16\\grid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750DFE00-71D6-4866-A24F-EB577D0E7CF3}|16\\16.csproj|solutionrelative:16\\grid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{750DFE00-71D6-4866-A24F-EB577D0E7CF3}|16\\16.csproj|c:\\users\\fgrazina\\source\\repos\\florian-grazina\\advent-2023\\16\\laser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750DFE00-71D6-4866-A24F-EB577D0E7CF3}|16\\16.csproj|solutionrelative:16\\laser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{750DFE00-71D6-4866-A24F-EB577D0E7CF3}|16\\16.csproj|c:\\users\\fgrazina\\source\\repos\\florian-grazina\\advent-2023\\16\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750DFE00-71D6-4866-A24F-EB577D0E7CF3}|16\\16.csproj|solutionrelative:16\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,22 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Plot.cs",
-              "DocumentMoniker": "C:\\Users\\fgrazina\\Source\\repos\\Florian-Grazina\\advent-2023\\21\\Plot.cs",
-              "RelativeDocumentMoniker": "21\\Plot.cs",
-              "ToolTip": "C:\\Users\\fgrazina\\Source\\repos\\Florian-Grazina\\advent-2023\\21\\Plot.cs",
-              "RelativeToolTip": "21\\Plot.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAtwDMAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-12-21T15:02:45.97Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -48,28 +42,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "input.txt",
-              "DocumentMoniker": "C:\\Users\\fgrazina\\Source\\repos\\Florian-Grazina\\advent-2023\\21\\input.txt",
-              "RelativeDocumentMoniker": "21\\input.txt",
-              "ToolTip": "C:\\Users\\fgrazina\\Source\\repos\\Florian-Grazina\\advent-2023\\21\\input.txt",
-              "RelativeToolTip": "21\\input.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAALAAAA",
+              "DocumentMoniker": "C:\\Users\\fgrazina\\Source\\repos\\Florian-Grazina\\advent-2023\\16\\input.txt",
+              "RelativeDocumentMoniker": "16\\input.txt",
+              "ToolTip": "C:\\Users\\fgrazina\\Source\\repos\\Florian-Grazina\\advent-2023\\16\\input.txt",
+              "RelativeToolTip": "16\\input.txt",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAqwG0AAABuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2023-12-21T15:02:10.136Z",
+              "WhenOpened": "2023-12-22T09:23:36.22Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\fgrazina\\Source\\repos\\Florian-Grazina\\advent-2023\\21\\Program.cs",
-              "RelativeDocumentMoniker": "21\\Program.cs",
-              "ToolTip": "C:\\Users\\fgrazina\\Source\\repos\\Florian-Grazina\\advent-2023\\21\\Program.cs*",
-              "RelativeToolTip": "21\\Program.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAzAAAA",
+              "DocumentIndex": 2,
+              "Title": "Grid.cs",
+              "DocumentMoniker": "C:\\Users\\fgrazina\\Source\\repos\\Florian-Grazina\\advent-2023\\16\\Grid.cs",
+              "RelativeDocumentMoniker": "16\\Grid.cs",
+              "ToolTip": "C:\\Users\\fgrazina\\Source\\repos\\Florian-Grazina\\advent-2023\\16\\Grid.cs",
+              "RelativeToolTip": "16\\Grid.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBMAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-12-21T14:58:03.008Z",
+              "WhenOpened": "2023-12-21T16:57:38.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Laser.cs",
+              "DocumentMoniker": "C:\\Users\\fgrazina\\Source\\repos\\Florian-Grazina\\advent-2023\\16\\Laser.cs",
+              "RelativeDocumentMoniker": "16\\Laser.cs",
+              "ToolTip": "C:\\Users\\fgrazina\\Source\\repos\\Florian-Grazina\\advent-2023\\16\\Laser.cs",
+              "RelativeToolTip": "16\\Laser.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAD4vxwAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-21T16:46:54.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Tile.cs",
+              "DocumentMoniker": "C:\\Users\\fgrazina\\Source\\repos\\Florian-Grazina\\advent-2023\\16\\Tile.cs",
+              "RelativeDocumentMoniker": "16\\Tile.cs",
+              "ToolTip": "C:\\Users\\fgrazina\\Source\\repos\\Florian-Grazina\\advent-2023\\16\\Tile.cs",
+              "RelativeToolTip": "16\\Tile.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAmwEkAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-21T16:45:43.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\fgrazina\\Source\\repos\\Florian-Grazina\\advent-2023\\16\\Program.cs",
+              "RelativeDocumentMoniker": "16\\Program.cs",
+              "ToolTip": "C:\\Users\\fgrazina\\Source\\repos\\Florian-Grazina\\advent-2023\\16\\Program.cs",
+              "RelativeToolTip": "16\\Program.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAgwDwAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-21T16:43:53.751Z",
               "EditorCaption": ""
             }
           ]
