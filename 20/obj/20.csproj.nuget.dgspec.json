@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fgrazina\\Source\\repos\\Florian-Grazina\\advent-2023\\20\\20.csproj": {}
+    "C:\\Users\\fgrazina.PPI\\Source\\repos\\Florian-Grazina\\advent-2023\\20\\20.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fgrazina\\Source\\repos\\Florian-Grazina\\advent-2023\\20\\20.csproj": {
+    "C:\\Users\\fgrazina.PPI\\Source\\repos\\Florian-Grazina\\advent-2023\\20\\20.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fgrazina\\Source\\repos\\Florian-Grazina\\advent-2023\\20\\20.csproj",
+        "projectUniqueName": "C:\\Users\\fgrazina.PPI\\Source\\repos\\Florian-Grazina\\advent-2023\\20\\20.csproj",
         "projectName": "20",
-        "projectPath": "C:\\Users\\fgrazina\\Source\\repos\\Florian-Grazina\\advent-2023\\20\\20.csproj",
-        "packagesPath": "C:\\Users\\fgrazina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fgrazina\\Source\\repos\\Florian-Grazina\\advent-2023\\20\\obj\\",
+        "projectPath": "C:\\Users\\fgrazina.PPI\\Source\\repos\\Florian-Grazina\\advent-2023\\20\\20.csproj",
+        "packagesPath": "C:\\Users\\fgrazina.PPI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fgrazina.PPI\\Source\\repos\\Florian-Grazina\\advent-2023\\20\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\fgrazina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fgrazina.PPI\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -37,6 +37,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -58,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

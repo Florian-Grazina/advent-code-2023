@@ -17,7 +17,7 @@ namespace _10
         public int Y { get; set; }
         public List<char[]> Map { get; set; } = [];
         public Direction Direction { get; set; }
-        public int Steps {  get; set; }
+        public int Steps { get; set; }
 
         public List<Pipe> Pipes =
         [
@@ -39,9 +39,9 @@ namespace _10
                 Direction = Direction.Right;
             else if (Map[Y][X - 1] == '-' || Map[Y][X + 1] == 'L' || Map[Y][X + 1] == 'F')
                 Direction = Direction.Left;
-            else if(Map[Y][Y + 1] == '|' || Map[Y][Y + 1] == 'L')
+            else if (Map[Y][Y + 1] == '|' || Map[Y][Y + 1] == 'L')
                 Direction = Direction.Down;
-            else if(Map[Y][Y - 1] == '|' || Map[Y][Y - 1] == '7' || Map[Y][Y - 1] == 'F')
+            else if (Map[Y][Y - 1] == '|' || Map[Y][Y - 1] == '7' || Map[Y][Y - 1] == 'F')
                 Direction = Direction.Up;
 
             Move(Direction);
@@ -60,7 +60,7 @@ namespace _10
 
             if (Steps % 2 == 1)
                 Steps++;
-            return Steps/2;
+            return Steps / 2;
         }
 
         public void Move(Direction direction)
@@ -83,6 +83,7 @@ namespace _10
                 Direction.Up => Direction.Down,
                 Direction.Down => Direction.Up,
                 _ => Direction.Right,
+                //kkk
             };
         }
     }
